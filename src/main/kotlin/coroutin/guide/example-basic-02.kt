@@ -17,3 +17,7 @@ suspend fun doWorld() {
     delay(1000L)
     println("World!")
 }
+
+fun <T>println(msg: T){
+    kotlin.io.println("$msg [${Thread.currentThread().name}]")
+}

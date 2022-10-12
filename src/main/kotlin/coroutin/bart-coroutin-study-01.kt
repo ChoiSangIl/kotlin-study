@@ -12,21 +12,15 @@ fun main() = runBlocking {
     launch {
         repeat(5){
             i-> println("Coroutine A, $i")
-            delay(10L)
+
+            delay(1000L)
         }
     }
 
     launch {
         repeat(5){
             i-> println("Coroutine B, $i")
-            delay(10L)
-        }
-    }
-
-    launch {
-        repeat(5){
-            i-> println("Coroutine C, $i")
-            delay(10L)
+            delay(1000L)
         }
     }
 
