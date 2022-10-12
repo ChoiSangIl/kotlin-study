@@ -14,3 +14,7 @@ fun main() = runBlocking { // this: CoroutineScope
     }
     println("Hello") // main coroutine continues while a previous one is delayed
 }
+
+fun <T>println(msg: T){
+    kotlin.io.println("$msg [${Thread.currentThread().name}]")
+}

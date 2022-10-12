@@ -4,6 +4,7 @@ import java.util.concurrent.CompletableFuture
 
 fun main(){
     val completableFuture = CompletableFuture.supplyAsync(){
+        println("async 함수 실행")
         Thread.sleep(2000)
         sum(100, 200)
     }
@@ -18,4 +19,8 @@ fun main(){
     }
 
     println("계산 종료")
+}
+
+fun <T>println(msg: T){
+    kotlin.io.println("$msg [${Thread.currentThread().name}]")
 }
