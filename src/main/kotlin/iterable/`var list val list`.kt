@@ -9,7 +9,6 @@ fun main() {
     list2 = list2.plus("TEST3")
     println("list1: $list1 list2: $list2")
 
-
     val list3: List<String>? = null
     var list4: List<String>? = null
 
@@ -32,5 +31,4 @@ fun main() {
     list6 = list6.plus(4)
 
     println("list5: $list5 list6: $list6")
-
 }
