@@ -8,10 +8,10 @@ fun main() {
 
     //public fun <T> listOf(element: T): List<T> = java.util.Collections.singletonList(element)
     val list: List<Coffee> = java.util.Collections.singletonList(americano);
-    //list.add() 사용 못함
+    //list.add()
 
     val list2 = java.util.Collections.singletonList(americano);
-    //list2.add(mix)  //호출가능 하지만 오류가남 listOf는 넘겨주는 객체가 1개일 때는 singletonList를 사용하기 때문에 오류 발생 java singletonList = 인덱스가 1개일인 리스트
+    list2.add(mix)  //호출가능 하지만 오류가남 listOf는 넘겨주는 객체가 1개일 때는 singletonList를 사용하기 때문에 오류 발생 java singletonList = 인덱스가 1개일인 리스트
 
     //여러개의 값을 받는 리스트 선언
     val list3: List<Coffee> = listOf(americano, mix)
@@ -27,6 +27,11 @@ fun main() {
     list5.add(mix)
     list5.add(espresso)
     println("${list5.javaClass} $list5")
+
+    val list6 : List<Coffee> = java.util.ArrayList<Coffee>()
+    //list6.add(espresso) 사용불가
+
+    val list7 = ArrayList<Int>()
 }
 
 data class Coffee(

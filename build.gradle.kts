@@ -2,8 +2,10 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.7.10"
+    kotlin("kapt") version "1.7.10"
     id("io.spring.dependency-management") version "1.0.12.RELEASE"
     application
+    java
 }
 
 group = "org.example"

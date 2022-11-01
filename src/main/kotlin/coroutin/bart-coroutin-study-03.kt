@@ -17,12 +17,14 @@ fun main() = runBlocking {
 suspend fun count2() = coroutineScope {
     launch {
         repeat(5){i ->
+            delay(1000L)
             println("Coroutine A, $i")
         }
     }
 
     launch {
         repeat(5){i ->
+            delay(1000L)
             println("Coroutine B, $i")
         }
     }
