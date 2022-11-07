@@ -21,13 +21,13 @@ fun main() {
 
 }
 
+interface Car
+class Fiat126 : Car
 val DEFAULT_CAR = Fiat126()
 
 interface CarFactory {
     fun produce() = DEFAULT_CAR
 }
-
-interface Car
 
 class Fiat126Factory : CarFactory{
     override fun produce(): Fiat126 {
@@ -35,4 +35,3 @@ class Fiat126Factory : CarFactory{
     }
 }
 
-class Fiat126 : Car
