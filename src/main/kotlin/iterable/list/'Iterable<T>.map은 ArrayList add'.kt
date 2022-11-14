@@ -3,12 +3,14 @@ package iterable.list
 fun main() {
     val cities = listOf("Seoul","Tokyo","MountainView")
     println(cities.javaClass)   //class java.util.Arrays$ArrayList
+    //cities.add("a") 오류
 
-    val list = cities.map { str: String -> str.toUpperCase() }
+    val list: List<String> = cities.map { str: String -> str.toUpperCase() }
     println(list.javaClass)     //class java.util.ArrayList
-    //list.add("a") 오류
+    //list.add("a")
 
-    val mutableList = mutableListOf<String>("a", "b", "c")
+    val mutableList = mutableListOf<String>("Seoul", "Tokyo", "MountainView")
     println(mutableList.javaClass)     //class java.util.ArrayList
-    mutableList.add("d")
+    mutableList.add("a")
+
 }
