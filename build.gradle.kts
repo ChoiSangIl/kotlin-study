@@ -20,7 +20,9 @@ dependencies {
     runtimeOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-slf4j:1.6.4")
 
-    testImplementation(kotlin("test"))
+    implementation("org.jetbrains.kotlin:kotlin-stdlib")
+    implementation("org.junit.jupiter:junit-jupiter:5.9.0")
+    implementation("io.mockk:mockk:1.13.2")
 }
 
 tasks.test {
