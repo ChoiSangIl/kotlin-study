@@ -14,4 +14,8 @@ fun main() {
     //1 * 2 = 2
     //2 * 3 = 6
     println(!3)
+
+    val a = 1
+    val b = 2
+    a.plus(b)
 }
