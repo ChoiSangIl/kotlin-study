@@ -19,6 +19,8 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
     runtimeOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-slf4j:1.6.4")
+    implementation("io.github.serpro69:kotlin-faker:1.14.0-rc.2")
+
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
     implementation("org.junit.jupiter:junit-jupiter:5.9.0")
