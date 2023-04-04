@@ -27,7 +27,7 @@ fun main(){
     list.component4()
     list.component5()
 
-    
+
     val map1 = mapOf("Bart" to "개발자")
     val map2 = mapOf(Pair("Bart","개발자"))
     println("$map1 $map2")
