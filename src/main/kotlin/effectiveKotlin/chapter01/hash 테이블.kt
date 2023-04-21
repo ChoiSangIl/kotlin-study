@@ -4,12 +4,18 @@ import java.util.*
 
 
 fun main() {
-    val person = FullName("AAA", "BBB")
+    val person = FullName("AAA", "AAA")
 
-    val names: SortedSet<FullName> = java.util.TreeSet<FullName>()
+    val names: HashSet<FullName> = HashSet()
+
     names.add(person)
     println(names)
 
+    names.add(FullName("BBB","BBB"))
+    names.add(FullName("CCC","CCC"))
+
+    person.name = "ZZZ"
+    println(person in names)
 }
 
 data class FullName(
